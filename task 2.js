@@ -29,7 +29,7 @@ if (arr[i].principal >= 2500 && arr[i].time > 1 && arr[i].time < 3){
 } else if (arr[i].principal >= 2500 && arr[i].time >= 3){
   interestData[i].rate = 4; 
   interestData[i].interest =(interestData[i].principal * interestData[i].time * interestData[i].rate) / 100;
-}else if (arr[i].principal < 2500 && arr[i].time <= 1){
+}else if (arr[i].principal < 2500 || arr[i].time <= 1){
   interestData[i].rate = 2; 
   interestData[i].interest =(interestData[i].principal * interestData[i].time * interestData[i].rate) / 100; 
 } else {
